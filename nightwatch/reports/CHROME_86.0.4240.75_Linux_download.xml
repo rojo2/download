@@ -5,9 +5,9 @@
 
   <testsuite name="download"
     errors="0" failures="0" hostname="" id="" package="download" skipped="0"
-    tests="1" time="1.164" timestamp="">
+    tests="1" time="1.158" timestamp="">
   
-    <testcase name="Verify that it downloads a Blob" classname="download" time="1.164" assertions="1">
+    <testcase name="Verify that it downloads a Blob" classname="download" time="1.158" assertions="1">
 
     
     </testcase>

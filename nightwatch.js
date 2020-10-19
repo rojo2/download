@@ -12,7 +12,7 @@ const server = http.createServer(async (request, response) => {
     })
     const { output: [{ code }] } = await bundle.generate({
       format: 'umd',
-      name: 'download'
+      name: 'downloader'
     })
     return response.end(code)
   }
