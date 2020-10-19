@@ -1,0 +1,42 @@
+{
+  "name": "@rojo2/download",
+  "version": "1.0.0",
+  "description": "Downloads Blob or File",
+  "main": "dist/download.js",
+  "module": "dist/download.module.js",
+  "directories": {
+    "lib": "dist",
+    "doc": "docs"
+  },
+  "dependencies": {
+    "jsdoc": "^3.6.6",
+    "minami": "^1.2.3",
+    "nightwatch": "^1.4.3",
+    "rollup": "^2.32.0"
+  },
+  "devDependencies": {
+    "chromedriver": "^86.0.0",
+    "eslint": "^7.11.0",
+    "eslint-config-prettier": "^6.13.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "geckodriver": "^1.20.0",
+    "serve-handler": "^6.1.3",
+    "terser": "^5.3.6"
+  },
+  "scripts": {
+    "build": "rollup -c rollup.config.js",
+    "docs": "jsdoc -R README.md -d docs -r -t node_modules/minami src/download.js",
+    "lint": "eslint -c .eslintrc.js src",
+    "test": "NIGHTWATCH_PORT=5000 NIGHTWATCH_DOWNLOADS=/tmp/nightwatch/downloads ./nightwatch/run.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:rojo2/download.git"
+  },
+  "author": "rojo2 <hola@rojo2.com>",
+  "license": "MIT"
+}

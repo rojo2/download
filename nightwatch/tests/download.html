@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Download</title>
+    <script src="/download.umd.js"></script>
+  </head>
+  <body>
+    <script>
+      download.download(
+        new Blob(['Hello, World!'], {
+          type: 'text/plain'
+        }),
+        'file.txt'
+      )
+    </script>
+  </body>
+</html>
